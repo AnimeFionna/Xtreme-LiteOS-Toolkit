@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55100F01-9273-4450-9120-0736D4C7C6CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApplication2</RootNamespace>
+    <AssemblyName>Xtreme LiteOS Toolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Xtreme LiteOS Toolkit.ico</ApplicationIcon>
+    <StartupObject>WindowsFormsApplication2.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\applied.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\applied.Designer.cs">
+      <DependentUpon>applied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\MyCheckBox.cs" />
+    <Compile Include="Classes\RJToggleButton.cs" />
+    <Compile Include="cleanup.cs" />
+    <Compile Include="Dialog_Boxes\about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\added.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\added.Designer.cs">
+      <DependentUpon>added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\cleared.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\cleared.Designer.cs">
+      <DependentUpon>cleared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\removed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\removed.Designer.cs">
+      <DependentUpon>removed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\reverted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\reverted.Designer.cs">
+      <DependentUpon>reverted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Boxes\_404notfound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Boxes\_404notfound.Designer.cs">
+      <DependentUpon>_404notfound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="User_Controls\activate.cs" />
+    <Compile Include="User_Controls\cancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Controls\cancel.Designer.cs">
+      <DependentUpon>cancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\compact.cs" />
+    <Compile Include="User_Controls\context.cs" />
+    <Compile Include="User_Controls\custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Controls\custom.Designer.cs">
+      <DependentUpon>custom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\downloads.cs" />
+    <Compile Include="User_Controls\gaming.cs" />
+    <Compile Include="User_Controls\home.cs" />
+    <Compile Include="User_Controls\tweaks.cs" />
+    <Compile Include="User_Controls\windowsapp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\applied.resources" />
+    <EmbeddedResource Include="cleanup.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\about.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\added.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\cleared.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\Error.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\removed.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\reverted.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\update.resources" />
+    <EmbeddedResource Include="Dialog_Boxes\_404notfound.resources" />
+    <EmbeddedResource Include="main.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="User_Controls\activate.resources" />
+    <EmbeddedResource Include="User_Controls\cancel.resources" />
+    <EmbeddedResource Include="User_Controls\compact.resources" />
+    <EmbeddedResource Include="User_Controls\context.resources" />
+    <EmbeddedResource Include="User_Controls\custom.resources" />
+    <EmbeddedResource Include="User_Controls\downloads.resources" />
+    <EmbeddedResource Include="User_Controls\gaming.resources" />
+    <EmbeddedResource Include="User_Controls\home.resources" />
+    <EmbeddedResource Include="User_Controls\tweaks.resources" />
+    <EmbeddedResource Include="User_Controls\windowsapp.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
